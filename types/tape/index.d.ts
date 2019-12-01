@@ -5,6 +5,7 @@
 //                 Dennis Schwartz <https://github.com/DennisSchwartz>
 //                 Michael Henretty <https://github.com/mikehenrty>
 //                 Rafał Ostrowski <https://github.com/rostrowski>
+//                 Billy Betz <https://github.com/billybetz>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 
 /// <reference types="node" />
@@ -34,6 +35,7 @@ declare namespace tape {
     interface TestOptions {
         skip?: boolean;		// See tape.skip.
         timeout?: number;	// Set a timeout for the test, after which it will fail. See tape.timeoutAfter.
+        objectPrintDepth?: number;  // Configure max depth of expected / actual object printing. Environmental variable NODE_TAPE_OBJECT_PRINT_DEPTH can set the desired default depth for all tests
     }
 
     /**
